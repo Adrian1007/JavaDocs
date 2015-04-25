@@ -68,7 +68,11 @@ public class Student {
     // TODO Exercise 2 g) the Student class
     @Override
     public int hashCode() {
-        return 0;
+        int hash = 17;
+        hash = hash * 31 + this.id.hashCode();
+        hash = hash * 31 + this.firstName.hashCode();
+        hash = hash * 31 + this.averageGrade.hashCode();
+        return hash;
         // TODO Exercise 2 h) After you finished implementing hashCode go to TODO Exercise 2 i) from Exercise2 class
     }
 
