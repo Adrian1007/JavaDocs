@@ -1,7 +1,7 @@
 -- Departments
 
 INSERT INTO departments VALUES
-  ( 10
+  ( 101
     , 'Administration'
     , 1700
   );
